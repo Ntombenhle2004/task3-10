@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+  <style>
+    .contact-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 60px 10%;
+      background-color: #ffffff;
+    }
+
+    .contact-info, .contact-form {
+      flex: 1;
+      min-width: 300px;
+      margin: 20px;
+    }
+
+    .contact-info h2, .contact-form h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: black;
+    }
+
+    .contact-info p {
+      margin: 8px 0;
+    }
+
+    .contact-form form {
+      display: flex;
+      flex-direction: column;
+
+     
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .contact-form textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .contact-form button {
+      padding: 12px;
+      background-color: #2C2C2C ;
+      color: white;
+      border: none;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .contact-form button:hover {
+      background-color:#2C2C2C ;
+    }
+
+    .map {
+      width: 100%;
+      height: 300px;
+      border: none;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+   <link rel="stylesheet" href="style.css">
+  <header class= "header">
+      <h2>Portfolio</h2>
+      <a href="index.html">Home</a> 
+      <a href="#">About</a> 
+      <a href="project.html">Project</a> 
+      <a href="contactus.html">Contact</a>    
+    </header>
+
+  <section class="contact-section">
+    <div class="contact-info">
+      <h2>Get in Touch</h2>
+      <p><strong>Email:</strong> ngcobontombenhle434@gmail.com</p>
+      <p><strong>Phone:</strong> +27 76 781 4774</p>
+      <p><strong>Address:</strong> Durban University of Technology, Indumiso Campus, Imbali, Pietermaritzburg, 3201</p>
+    </div>
+
+    <div class="contact-form">
+      <h2>Contact Us</h2>
+      <form action="https://formspree.io/f/mpwlylze"
+  method="POST">
+
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="text" name="subject" placeholder="Subject" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button onclick="btn()" type="submit">Send Message</button>
+        
+      </form>
+    </div>
+  </section>
+
+  
+<footer class="footer">
+    <div class="footer-section">© 2025 My Portfolio</div>
+    <div class="footer-section">
+       <div class="footer-section">
+        <a href="contactus.html" style="color: white;">Contact us |
+        <a href="privacy.html" style="color: white;">Privacy Policy
+    </div>
+  </footer>
+
+  <script>
+    function btn(){
+      alert("Your message has been successfully sent")
+    }
+  </script>
+
+</body>
+</html>
